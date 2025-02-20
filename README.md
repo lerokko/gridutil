@@ -8,20 +8,20 @@ Gridutil is a datapack library intended for datapack/map makers. It a lightweigh
 
 - Generate a continuous grid of markers trough the entire world.
 - Start, stop, and pause, grid generation via functions (or advance them step by step)
-- A function tag will be called that you can hook your datapacks function into. Functions under this tag will be ran `as` and `at` any marker that needs to be populated.
+- A function tag will be called that you can hook your datapacks functions into. Functions under this tag will be ran `as` and `at` any marker that needs to be populated.
 - Configurable grid size via scoreboard
 - Configurable origin (offset + y-level) via scoreboard
-- Configurable grid cell population per tick (default 1) to not lag server
+- Configurable grid cell population per tick (default 1) to not lag servers
 
 ## Planned features
 
-- Teleport support. (Multiplayer is already supported but all player have to start at spawn/origin)
+- Teleport support. (Multiplayer is already supported but all players have to start at spawn/origin)
 - 3D cell grid
-- independent dimensions (height width, depth) of the grid cells (currently only squares are supported)
+- independent cell dimensions (height width, depth) for the grid (currently only squares are supported)
 
 ## Installation
 
-Either enable the datapack alongside any datapack that needs it or "shade" it into said datapack. That means bundling gridutil as a dependency inside your onw datapacks. This can be easily done by copying the `"data/gridutil"` folder inside you own datapacks `data` folder.
+Either enable the datapack alongside any datapack that needs it or "shade" it into said datapack. That means bundling gridutil as a dependency inside your own datapacks. This can be easily done by copying the `"data/gridutil"` folder inside you own datapacks `data` folder.
 
 ## Usage
 
@@ -65,8 +65,8 @@ There are several debug option built-in into Gridutil.
 
 ## Known Issues
 
-- Unsafe teleportation! The grid is generated from the origin point outwards inside chunks that players load. the grid can only "spread" trough existing chunks currently. So if you create isolated part in the world (For example trough nether travel) the grid will not generate in those isolated regions. As long as you do not let your player leave the dimension and/or teleport him far away to ungenerated chunks, this should not be an issue.
+- Unsafe teleportation! The grid is generated from the origin point outwards inside chunks that players load. the grid can only "spread" trough existing chunks currently (grid cells spread from one neighboring cell to another). So if you create isolated parts in the world (For example trough nether travel) the grid will not generate in those isolated regions. As long as you do not let your player leave the dimension and/or teleport them far away to ungenerated chunks, this should not be an issue.
 
 ## License
 
-this datapack is **licensed under GPL3**. Please give credit if you are sharing this datapack or a modified version of it.
+This datapack is **licensed under GPL3**. Please give credit if you are sharing this datapack or a modified version of it.
