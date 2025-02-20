@@ -1,0 +1,2 @@
+# this singel line of code is extra so /step can still be run without giving arguments
+$execute as @e[scores={pop_step=2},tag=grid_cell,limit=$(cells_per_tick)] run execute positioned as @s at @s run function gridutil:generation/step/place_structures with storage gridutil:config

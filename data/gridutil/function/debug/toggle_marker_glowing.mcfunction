@@ -1,0 +1,4 @@
+execute if score $GRIDUTIL_CONFIG highlight_markers matches 1.. run return run scoreboard players set $GRIDUTIL_CONFIG highlight_markers 0
+execute if score $GRIDUTIL_CONFIG highlight_markers matches ..0 run scoreboard players set $GRIDUTIL_CONFIG highlight_markers 1
+execute if score $GRIDUTIL_CONFIG highlight_markers matches 1.. run tellraw @p [{"text":""},{"text":"[","color":"gold"},{"text":"Gridutil","color":"yellow"},{"text":"] ","color":"gold"},{"text":"Markers will now render flame particle. Run  ","color":"white"},{"text":"[/function gridutil:debug/toggle_marker_glowing]","color":"blue","clickEvent":{"action":"run_command","value":"/function gridutil:debug/toggle_marker_glowing"}},{"text":" to disable again.","color":"white"}]
+function gridutil:debug/particle_renderer

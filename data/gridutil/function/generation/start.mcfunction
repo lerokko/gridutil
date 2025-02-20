@@ -1,0 +1,1 @@
+execute if score $GRIDUTIL_CONFIG guid matches 1 run function gridutil:setup/start

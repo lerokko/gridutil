@@ -1,0 +1,4 @@
+execute if score $GRIDUTIL_CONFIG auto_stepping matches 1.. run return run scoreboard players set $GRIDUTIL_CONFIG auto_stepping 0
+execute if score $GRIDUTIL_CONFIG auto_stepping matches ..0 run scoreboard players set $GRIDUTIL_CONFIG auto_stepping 1
+execute if score $GRIDUTIL_CONFIG auto_stepping matches 1.. run tellraw @p [{"text":""},{"text":"[","color":"gold"},{"text":"Gridutil","color":"yellow"},{"text":"] ","color":"gold"},{"text":"Generator running normal again. Run  ","color":"white"},{"text":"[/function gridutil:debug/toggle_freezing]","color":"blue","clickEvent":{"action":"run_command","value":"/function gridutil:debug/toggle_freezing"}},{"text":" to freeze the generator again.","color":"white"}]
+function gridutil:generation/step

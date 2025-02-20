@@ -1,0 +1,2 @@
+execute positioned as @e[tag=grid_cell] run particle flame ~ ~ ~ 0.0 0.0 0.0 0.01 1 force
+execute if score $GRIDUTIL_CONFIG highlight_markers matches 1.. run schedule function gridutil:debug/particle_renderer 1t replace
