@@ -41,14 +41,14 @@ This should only be done for testing.
 
 Gridutil has several configuration options. **The following options can only be set before the grid generation is started**:
 
-Most of these options can be edited from the in_game config menu via `/function gridutil:config`.
+Most of these options can be edited from the in-game config menu via `/function gridutil:config`.
 
 | Option                                      | Default | Command             |
 |---------------------------------------------|---------|---------------------|
 | Grid size. How far apart will markers spawn | 16      | `/scoreboard players set $GRIDUTIL_CONFIG gridsize <number>` |
 | Grid Origin                                 | 8, 100, 8, | `/function gridutil:set/origin_to_current_position` |
 
-The option below are supported to be changed at any time:
+The options below are supported to be changed at any time:
 
 | Option                                      | Default | Command             |
 |---------------------------------------------|---------|---------------------|
