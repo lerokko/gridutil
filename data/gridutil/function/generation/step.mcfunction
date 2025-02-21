@@ -10,7 +10,7 @@ function gridutil:generation/step/_sanity_check_overlap with storage gridutil:co
 # send debug msg if marker was killed here
 
 # check for initialized cells with nb_count of 4 and mark them as integrated
-scoreboard players set @e[scores={nb_count=4..,pop_step=1},tag=grid_cell] pop_step 2
+#scoreboard players set @e[scores={nb_count=4..,pop_step=1},tag=grid_cell] pop_step 2
 
 
 # check neighbor cells of all cells with nb_count less than 4 and put a new unprimed marker there (only if there is not already a marker)
