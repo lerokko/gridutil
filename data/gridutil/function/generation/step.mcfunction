@@ -1,5 +1,6 @@
 
-title @a actionbar [{"text":""},{"text":"[","color":"gold"},{"text":"Gridutil","color":"yellow"},{"text":"] ","color":"gold"},{"score":{"name":"$GRIDUTIL_CONFIG","objective":"guid"}}]
+# If this command is enabled it will show the number of generated markers in the action bar. Useful for debugging.
+#title @a actionbar [{"text":""},{"text":"[","color":"gold"},{"text":"Gridutil","color":"yellow"},{"text":"] ","color":"gold"},{"score":{"name":"$GRIDUTIL_CONFIG","objective":"guid"}}]
 
 # SANITY CHECK
 # check for overlapping markers
