@@ -21,6 +21,9 @@ scoreboard objectives add pop_step dummy {"text": "Population Step"}
 scoreboard objectives add nb_count dummy {"text": "Neighbor Count"}
 scoreboard objectives add guid dummy {"text": "GUID"}
 scoreboard objectives add cell_version dummy {"text": "Cell Version"}
+scoreboard objectives add cell_noise_1 dummy {"text": "Cell Noise 1"}
+
+scoreboard objectives add integer dummy {"text": "Integer"}
 # user/custom
 scoreboard objectives add gridsize dummy {"text": "Grid Size"}
 scoreboard objectives add origin_x dummy {"text": "Origin X"}
@@ -31,6 +34,7 @@ scoreboard objectives add generation_distance dummy {"text": "Generation distanc
 scoreboard objectives add highlight_markers dummy {"text": "Marker Highlight"}
 scoreboard objectives add auto_stepping dummy {"text": "Auto stepping generator"}
 scoreboard objectives add debug_structures dummy {"text": "Place glowstone"}
+scoreboard objectives add noise_markers dummy {"text": "Show Noise Markers"}
 
 
 # SYSTEM CONFIG
@@ -44,6 +48,7 @@ scoreboard players set $GRIDUTIL_CONFIG guid 1
 scoreboard players set $GRIDUTIL_CONFIG highlight_markers 0
 scoreboard players set $GRIDUTIL_CONFIG auto_stepping 1
 scoreboard players set $GRIDUTIL_CONFIG debug_structures 0
+scoreboard players set $GRIDUTIL_CONFIG noise_markers 0
 
 
 # USER CONFIG
@@ -61,6 +66,9 @@ execute store result storage gridutil:config generation_distance int 1 run score
 # defining static numbers for calculation
 #scoreboard objectives add integer dummy
 #scoreboard players set $DUMMY_40 integer 40
+
+# grab seed
+execute store result score $seed integer run seed
 
 
 tellraw @a [{"text":""},{"text":"[","color":"gold"},{"text":"Gridutil","color":"yellow"},{"text":"] ","color":"gold"},{"text":"Thank you for installing Gridutil","color":"white"}]

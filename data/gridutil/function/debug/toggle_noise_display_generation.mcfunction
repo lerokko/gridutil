@@ -1,0 +1,3 @@
+execute if score $GRIDUTIL_CONFIG noise_markers matches 1.. run return run scoreboard players set $GRIDUTIL_CONFIG noise_markers 0
+execute if score $GRIDUTIL_CONFIG noise_markers matches ..0 run scoreboard players set $GRIDUTIL_CONFIG noise_markers 1
+execute if score $GRIDUTIL_CONFIG noise_markers matches 1.. run tellraw @p [{"text":""},{"text":"[","color":"gold"},{"text":"Gridutil","color":"yellow"},{"text":"] ","color":"gold"},{"text":"Color markers will generate from now on. Run  ","color":"white"},{"text":"[/function gridutil:debug/toggle_noise_display_generation]","color":"blue","clickEvent":{"action":"run_command","value":"/function gridutil:debug/toggle_freezing"}},{"text":" to disable this again.","color":"white"}]

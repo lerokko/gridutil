@@ -9,3 +9,5 @@ tellraw @s [{"text":"[pause/unpause cell generation]","color":"green","clickEven
 tellraw @s [{"text":"[toggle cell marker particles]","color":"green","clickEvent":{"action":"suggest_command","value":"/function gridutil:debug/toggle_marker_glowing"},"hoverEvent":{"action":"show_text","contents":[{"text":"Toggles cell marker particles for debugging"}]}}]
 
 tellraw @s [{"text":"[toggle cell glowstone placing]","color":"green","clickEvent":{"action":"suggest_command","value":"/function gridutil:debug/toggle_glowstone_placement"},"hoverEvent":{"action":"show_text","contents":[{"text":"Toggles placing a glowstone block above marker"}]}}]
+
+tellraw @s [{"text":"[toggle noise color markers]","color":"green","clickEvent":{"action":"suggest_command","value":"/function gridutil:debug/toggle_noise_display_generation"},"hoverEvent":{"action":"show_text","contents":[{"text":"Toggles generating a noise based colore above markers"}]}}]
