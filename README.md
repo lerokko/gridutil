@@ -33,7 +33,7 @@ Once the generator has been started it can not be restarted only paused.
 Gridutil will start generating a grid of marker entitles around the player (by default at 8,100,8 and 16 blocks apart).
 
 Any functions under the `#gridutil:generate_at_marker` tag will run under the scope of a marker once if it is ready to populate. This is called exactly once for each grid cell. If you do NOT put any functions under this tag the library will do nothing.
-Each marker has a random scoreboard value set (cell_noise_1). This value is based on the coordinates + the world seed. Meaning it will be the same for all world with the same seed. This can be utilized for custom deterministic generation in cells.
+Each marker has a random scoreboard value set (cell_noise_1). This value is based on the coordinates + the world seed. Meaning it will be the same for all world with the same seed (if you pick the same `gridsize` and `origin` point). This can be utilized for custom deterministic generation in cells.
 
 The generation can be paused and resumed with `/function gridutil:debug/toggle_freezing` or directly by setting the scoreboard of `$GRIDUTIL_CONFIG auto_stepping` to 1 or 0.
 This should only be done for testing.
