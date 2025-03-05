@@ -4,7 +4,7 @@ say installing pack
 ###
 
 # EDIT set current version number here
-scoreboard players set $VERSION gridutil_pack_info 1000
+scoreboard players set $VERSION gridutil_pack_info 1100
 # Increased for breaking changes. Not yet used but already implemeneted for as future proofing
 scoreboard players set $GRIDUTIL_CONFIG cell_version 1
 
