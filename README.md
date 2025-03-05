@@ -12,6 +12,7 @@ Gridutil is a datapack library intended for datapack/map makers. It a lightweigh
 - Configurable grid size via scoreboard
 - Configurable origin (offset + y-level) via scoreboard
 - Configurable grid cell population per tick (default 1) to not lag servers
+- Access to seeded noise for each cell via scoreboard (cell_noise_1)
 
 ## Planned features
 
