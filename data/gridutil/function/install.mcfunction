@@ -42,7 +42,7 @@ scoreboard objectives add noise_markers dummy {"text": "Show Noise Markers"}
 scoreboard players set $GRIDUTIL_CONFIG origin_x 0
 scoreboard players set $GRIDUTIL_CONFIG origin_y 0
 scoreboard players set $GRIDUTIL_CONFIG origin_z 0
-function gridutil:set/origin_to_provided_coords {x:7,y:100,z:7}
+function gridutil:set/origin_to_provided_coords {x:7,y:72,z:7}
 scoreboard players set $GRIDUTIL_CONFIG guid 1
 # debug default values
 scoreboard players set $GRIDUTIL_CONFIG highlight_markers 0
@@ -53,13 +53,13 @@ scoreboard players set $GRIDUTIL_CONFIG noise_markers 0
 
 # USER CONFIG
 # user configurable values
-scoreboard players set $GRIDUTIL_CONFIG gridsize 32
+scoreboard players set $GRIDUTIL_CONFIG gridsize 63
 execute store result storage gridutil:config gridsize int 1 run scoreboard players get $GRIDUTIL_CONFIG gridsize
 # set cells_per_tick to -1 for unlimited
 scoreboard players set $GRIDUTIL_CONFIG cells_per_tick 1
 execute store result storage gridutil:config cells_per_tick int 1 run scoreboard players get $GRIDUTIL_CONFIG cells_per_tick
 # set generation_distance to -1 for unlimited
-scoreboard players set $GRIDUTIL_CONFIG generation_distance 64
+scoreboard players set $GRIDUTIL_CONFIG generation_distance 96
 execute store result storage gridutil:config generation_distance int 1 run scoreboard players get $GRIDUTIL_CONFIG generation_distance
 
 

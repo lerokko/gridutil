@@ -5,15 +5,11 @@
 # SANITY CHECK
 # check for overlapping markers
 function gridutil:generation/step/_sanity_check_overlap with storage gridutil:config
-#  kill higher numbers
-#   iterate 4 times
-# send debug msg if marker was killed here
 
-# check for initialized cells with nb_count of 4 and mark them as integrated
-#scoreboard players set @e[scores={nb_count=4..,pop_step=1},tag=grid_cell] pop_step 2
-
-
-# check neighbor cells of all cells with nb_count less than 4 and put a new unprimed marker there (only if there is not already a marker)
+# experimental test #
+#rechecking for any unprimed margers and run init code again
+# NOTE: so far this never triggered. it seems unnecessary
+execute as @e[tag=unprimed,limit=1] run function gridutil:generation/step/assign_guid_and_prime_fix
 
 
 # this encapsulation is needed to be able to run this code easily from the game without passing arguemtns as well
